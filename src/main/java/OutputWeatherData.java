@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class OutputWeatherData {
-    public static void main(String[] args) {
+    public void staticOutputWeatherData() {
         try {
             JSONParser parser = new JSONParser();
             JSONObject data = (JSONObject) parser.parse(new FileReader("src/resources/weather.json"));
