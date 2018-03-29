@@ -8,8 +8,14 @@
     <artifactId>Nashville</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>NashvilleWeather</name>
+    <description>Output weather in Nashville</description>
+    <url>https://github.com/ZalizniakVasiliy/Weather</url>
+
     <properties>
         <java.version>1.8</java.version>
+        <json-simple.version>1.1.1</json-simple.version>
+        <jcabi-http.version>1.17.2</jcabi-http.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -33,9 +39,14 @@
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
+            <version>${json-simple.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.jcabi</groupId>
+            <artifactId>jcabi-http</artifactId>
+            <version>${jcabi-http.version}</version>
+        </dependency>
+        
     </dependencies>
-
 </project>
